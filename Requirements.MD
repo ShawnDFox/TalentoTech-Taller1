@@ -1,0 +1,2 @@
+Crear tabla con nombre, estatus, especie. añadir en la cuarta columna un campo para seleccionar la lista de episodios en la que aparece y mostrar al personaje en la card.
+segunda tabla con origen localización e imagen del personaje
