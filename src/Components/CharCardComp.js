@@ -1,18 +1,24 @@
+import { Card, CardBody, CardHeader, CardImg } from "react-bootstrap";
+
 function CharCardComp(props)
 {
     console.log(`char: ${JSON.stringify(props.data)}`);
     
     return(
         <>
-        <div class="Card"> 
-            <div id="Name"><h3>{props.data.name}</h3></div>
-            <div id="Photo"><img src={props.data.image}></img></div>
-            <div id="Data">
+        <Card>
+            <CardHeader>
+                <h3>{props.data.name}</h3>
+            </CardHeader>
+            <CardImg src={props.data.image}></CardImg>
+            <CardBody className="align">                
                 origin: {props.data.origin.name}<br/>
-                Location: {props.data.location.name} 
-            </div>
-        </div>
+                Location: {props.data.location.name}                       
+            </CardBody>
+            
+        </Card>
         </>
+        
     );
 }
 export default CharCardComp;

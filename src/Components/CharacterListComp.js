@@ -1,7 +1,9 @@
+import { Button, Table } from "react-bootstrap";
+
 function CharacterListComp(props)
 {   return(
         <>
-        <table>
+        <Table striped>
             <thead>
                 <tr>
                 <th>Name</th>                
@@ -17,12 +19,12 @@ function CharacterListComp(props)
                     <td>{d.name}</td>
                     <td>{d.species}</td>
                     <td>{d.status}</td>
-                    <td><button type='button' onClick={()=>{props.SelectedChar(d.id)}}>View</button></td>            
+                    <td><Button onClick={()=>{props.SelectedChar(d.id)}}>View</Button></td>            
                 </tr>         
                 ))}
             </tbody>
             
-        </table>
+        </Table>
         
         
         </>

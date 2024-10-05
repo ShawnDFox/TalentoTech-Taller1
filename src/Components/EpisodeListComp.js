@@ -3,9 +3,9 @@ function EpisodeListComp(props)
     console.log(props.data.episode)
     return(<>
     <div>      
-        <ol>
+        <ol className="list-group list-group-flush">
             {props.data.episode.map((d,i)=>(
-                <li key={i}><a href={d}>{d}</a></li>
+                <li key={i} className="list-group-item"><a href={d}>{d}</a></li>
             ))}
         </ol>    
     </div>
